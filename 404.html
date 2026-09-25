@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>Toolkit AGY - 頁面導向中</title>
+    <script type="text/javascript">
+      var pathSegments = window.location.pathname.split('/').filter(Boolean);
+      var repoPrefix = pathSegments.length > 0 ? '/' + pathSegments[0] + '/' : '/';
+      window.location.replace(window.location.origin + repoPrefix);
+    </script>
+  </head>
+  <body>
+    <p>正在為您導向至首頁，請稍候...</p>
+  </body>
+</html>
